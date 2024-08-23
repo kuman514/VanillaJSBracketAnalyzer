@@ -10,9 +10,7 @@ const bracketClosers = Object.values(correspondingBracketCloser);
 function checkIsAllBracedBrackets(sentence) {
   const bracketStack = [];
 
-  for (let i = 0; i < sentence.length; i++) {
-    const curChar = sentence[i];
-
+  for (const curChar of sentence) {
     // If it is opening bracket, push to stack.
     if (correspondingBracketCloser[curChar]) {
       bracketStack.push(curChar);
