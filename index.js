@@ -3,6 +3,7 @@ const correspondingBracketCloser = {
   '<': '>',
   '{': '}',
   '[': ']',
+  '《': '》',
 };
 
 const bracketClosers = Object.values(correspondingBracketCloser);
